@@ -1,4 +1,9 @@
+const STARTING_MISSILES: i32  = 8;
+const READY_AMOUNT: i32  = 2;
+
 fn main() {
+    variables();
+    
     let bunnies = 2;
     let typed: i32 = 2;
     let (carrots, lettuce) = (14, 6);
@@ -38,4 +43,14 @@ fn main() {
     let unassigned: i32;
 
     // println!("{}", unassigned); // Throws an Error
+}
+
+fn variables() {
+  let (mut missiles, ready) = (STARTING_MISSILES, READY_AMOUNT);
+
+  println!("Firing {} of my {} missiles...", ready, missiles);
+
+  missiles = missiles - ready;
+
+  println!("{} missiles left", missiles);
 }
