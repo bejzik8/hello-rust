@@ -32,4 +32,10 @@ fn main() {
 
     // let meme = 'Something';
     // let meme = make_image(meme);
+
+    // Initialization
+
+    let unassigned: i32;
+
+    // println!("{}", unassigned); // Throws an Error
 }
