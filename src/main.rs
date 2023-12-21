@@ -1,9 +1,15 @@
+use hello::greet;
+use rand::{thread_rng, Rng};
+
 const STARTING_MISSILES: i32  = 8;
 const READY_AMOUNT: i32  = 2;
 
 fn main() {
     excercise_1_variables();
     excercise_2_functions();
+    greet();
+
+    let random = thread_rng().gen_range(0, 101);
 
     let bunnies = 2;
     let typed: i32 = 2;
