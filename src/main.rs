@@ -3,7 +3,7 @@ const READY_AMOUNT: i32  = 2;
 
 fn main() {
     variables();
-    
+
     let bunnies = 2;
     let typed: i32 = 2;
     let (carrots, lettuce) = (14, 6);
@@ -53,4 +53,9 @@ fn variables() {
   missiles = missiles - ready;
 
   println!("{} missiles left", missiles);
+}
+
+fn tail_expression(qty: f64) -> f64 {
+    // If the last expression doesn't have a semicolon, it will be returned
+    qty * 2.0
 }
